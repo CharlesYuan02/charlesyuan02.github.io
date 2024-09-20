@@ -22,7 +22,7 @@ const allProjects = [
         image: "/assets/img/mary.png",
         github: "https://github.com/CharlesYuan02/mary-bot",
         demo: "https://discord.com/oauth2/authorize?client_id=1038557818200019025&permissions=8&scope=bot",
-        date: "2024-11-12"
+        date: "2022-11-12"
     }
 ];
 
