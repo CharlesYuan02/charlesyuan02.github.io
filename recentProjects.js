@@ -5,23 +5,29 @@ const allProjects = [
         description: "A full-stack web app for creating and sharing portfolios with your friends! Made using React and Django.",
         image: "/assets/img/portfolio-io.png",
         github: "https://github.com/CharlesYuan02/portfolio.io",
-        demo: "https://github.com/CharlesYuan02/portfolio.io"
+        demo: "https://github.com/CharlesYuan02/portfolio.io",
+        date: "2024-09-09"
     },
     {
         title: "Mango10K",
         description: "A chatbot to help retail investors effectively digest company 10-Ks and 10-Qs. Made for the 2024 MongoDB GenAI Hackathon.",
         image: "/assets/img/mango10k.png",
         github: "https://github.com/CharlesYuan02/Mango10K",
-        demo: "https://www.linkedin.com/posts/daniel-chen297_on-april-6th-we-created-mango10k-at-activity-7184621025626615808-aZ97/?utm_source=share&utm_medium=member_desktop"
+        demo: "https://www.linkedin.com/posts/daniel-chen297_on-april-6th-we-created-mango10k-at-activity-7184621025626615808-aZ97/?utm_source=share&utm_medium=member_desktop",
+        date: "2024-04-27"
     },
     {
         title: "Mary (Discord Bot)",
         description: "A Discord bot I made in Go. Her name is Mary.",
         image: "/assets/img/mary.png",
         github: "https://github.com/CharlesYuan02/mary-bot",
-        demo: "https://discord.com/oauth2/authorize?client_id=1038557818200019025&permissions=8&scope=bot"
+        demo: "https://discord.com/oauth2/authorize?client_id=1038557818200019025&permissions=8&scope=bot",
+        date: "2024-11-12"
     }
 ];
+
+// Sort projects by date in descending order
+allProjects.sort((a, b) => new Date(b.date) - new Date(a.date));
 
 let isFirstProjectLoaded = false;
 
