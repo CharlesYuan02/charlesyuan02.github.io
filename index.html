@@ -404,120 +404,19 @@
     </section>
 
     <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="/assets/img/portfolio-io.png" style="height: auto; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Portfolio.io<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A full-stack web app for creating and sharing portfolios with your friends! Made using React and Django.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Auth0, Supabase, Pinecone, OpenAI, EdgarTools</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://github.com/CharlesYuan02/portfolio.io" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/CharlesYuan02/portfolio.io"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
+    <div id="projects" class="section section scrollspy">
+        <h3 class="page-title white-text teal">Projects</h3>
+        <div class="container">
+            <div class="row">
+            <div id="recent-projects">
+                <!-- Recent projects will be dynamically inserted here -->
             </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/mango10k.png" style="height: auto; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Mango10K<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                    A chatbot to help retail investors effectively digest company 10-Ks and 10-Qs. Made for the 2024 MongoDB GenAI Hackathon.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> LangChain, Gradio, MongoDB</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://www.linkedin.com/posts/daniel-chen297_on-april-6th-we-created-mango10k-at-activity-7184621025626615808-aZ97/?utm_source=share&utm_medium=member_desktop" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/CharlesYuan02/Mango10K"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
             </div>
-          </div>
-
-          <!-- Flask Project -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/mary.png"
-                style="height: auto; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Mary (Discord Bot)<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                    A Discord bot I made in Go. Her name is Mary.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Go, MongoDB, Fly.io</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://discord.com/oauth2/authorize?client_id=1038557818200019025&permissions=8&scope=bot" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/CharlesYuan02/mary-bot"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
+            <div class="row center-align">
+            <button id="load-more" class="btn waves-effect waves-light">Load More</button>
             </div>
-          </div>
-
-          <!-- ************* -->
         </div>
-      </div>
-    </section>
+    </div>
 
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
@@ -729,6 +628,9 @@
       })
     })
   </script>
-</body>
 
+    <!-- Custom JS for loading projects -->
+    <script src="recentProjects.js"></script>
+    
+</body>
 </html>
